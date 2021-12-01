@@ -1,0 +1,29 @@
+--What is POM (Page Object Model)?
+--What is a framework?--
+--What are the advantages of the Automation framework?--
+--What are the different types of frameworks?
+--How to take screenshots in WebDriver?
+--Why do we use TestNg or Junit?
+--How to run the test script in TestNG?
+--What are the annotations used in the TestNG?
+--What is the sequence of execution of all the annotations in TestNG?
+--How to set the priorities in TestNG?
+--Define grouping in TestNG?
+--What is invocationCount in TestNG?
+--How can we disable the test case from running?
+--What is the difference between soft assertion and hard assertion?
+--What is POM ? Advantages of POM?
+-- How to Explain Project in Interview For Experienced?
+--What is Maven?
+--What Are Benefits Of Maven?
+--Explain what is POM?
+--List out what are the build phases in Maven?
+--Explain how to run test classes in Maven?
+--What are different types of Build Profiles?
+--What Is Maven Archetype?
+--What Is Target, Source & Test Folders In Maven?
+--What is the use of Maven clean?
+--What does @DataProvider annotation do?
+--How do you exclude a group from the test execution cycle?
+--What is default value for the TestNG Priority?
+--How to run test form command line?
