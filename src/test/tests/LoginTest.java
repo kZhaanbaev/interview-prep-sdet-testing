@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
 
     @Test(testName = "Login test" ,description = "Verify admin can successfully log in with right credentials", groups = {"smokeTest", "regression"})
     public void test01(){
-        logScreenshot("Login Page");
+        reportManager.logScreenshot("Login Page");
         loginPage.logIn();
 
         Assert.assertTrue(homePage.allTopics_dashboard.isDisplayed());
@@ -32,7 +32,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Verify error message is displayed when password is wrong", groups = {"regression"})
     public void test02(){
         loginPage.logIn("admin@yahoo.com", "wrong password");
-        logScreenshot("Login Page");
+        reportManager.logScreenshot("Login Page");
 
         Assert.assertTrue(homePage.errorMsg.isDisplayed());
     }

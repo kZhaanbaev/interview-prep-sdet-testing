@@ -50,6 +50,7 @@ public class HomeTest extends BaseTest {
 
     @Test(description = "Verify all dashboards are displayed", dataProviderClass = DataProviders.class, dataProvider = "dashboards", groups = {"regression"})
     public void test03(String dashboardName){
+        reportManager.logScreenshot("Dashboards");
         Assert.assertTrue(homePage.isDashboardDisplayed(dashboardName));
     }
 
