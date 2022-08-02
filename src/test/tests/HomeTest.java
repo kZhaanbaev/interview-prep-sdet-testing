@@ -19,10 +19,6 @@ public class HomeTest extends BaseTest {
     LoginPage loginPage;
     HomePage homePage;
 
-    HomeTest(){
-        super();
-    }
-
     @BeforeMethod(alwaysRun = true)
     public void setUp(){
         loginPage = new LoginPage(driver);

@@ -11,10 +11,6 @@ public class LoginTest extends BaseTest {
     LoginPage loginPage;
     HomePage homePage;
 
-    public LoginTest(){
-        super();
-    }
-
     @BeforeMethod(alwaysRun = true)
     public void setUp(){
         loginPage = new LoginPage(driver);

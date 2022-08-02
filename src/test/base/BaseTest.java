@@ -1,11 +1,5 @@
 package base;
 
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,17 +7,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import pages.LoginPage;
 import utils.ConfigReader;
 import utils.ExtentManager;
-import utils.Screenshot;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     public WebDriver driver;
-    protected ExtentManager reportManager;
+    protected static ExtentManager reportManager;
     String configFilePath = "src/test/data/config/config.properties";
 
     @BeforeMethod(alwaysRun = true)
@@ -40,7 +32,7 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         reportManager.closeTestReport(result);
-        driver.quit();
+        driver.close();
     }
 
     @BeforeSuite(alwaysRun = true)
@@ -53,6 +45,7 @@ public class BaseTest {
     public void closeReporter() {
         reportManager.closeReporter();
     }
+
 
     public void initializeDriver(String browser) {
         switch (browser) {

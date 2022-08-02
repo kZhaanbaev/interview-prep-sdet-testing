@@ -1,29 +1,29 @@
 
 
-####What is POM (Page Object Model)?
+#### What is POM (Page Object Model)?
 Page Object Model is a Design Pattern which has become popular in Selenium Test Automation. It is widely used design pattern in Selenium for enhancing test maintenance and reducing code duplication. The benefit is that if the UI changes for the page, the tests themselves don’t need to change, only the code within the page object needs to change. Subsequently, all changes to support that new UI is located in one place.
 
-#####What is a framework?
+##### What is a framework?
 A testing framework is a set of guidelines or rules used for creating and designing test cases. A framework is comprised of a combination of practices and tools that are designed to help QA professionals test more efficiently.
 
-#####What are the advantages of the Automation framework?
+##### What are the advantages of the Automation framework?
 * Improved test efficiency.
 * Lower maintenance costs.
 * Minimal manual intervention.
 * Maximum test coverage.
 * Reusability of code.
 
-#####What are the different types of frameworks?
+##### What are the different types of frameworks?
 * Data Driven Testing Framework
 * Keyword Driven Testing Framework
 * Test Driven Development framework (TDD)
 * Behavior Driven Development Framework (BDD)
 * Hybrid Testing Framework
 
-#####How to take screenshots in WebDriver?**
+##### How to take screenshots in WebDriver?**
 Refer Screenshot class in utils package
 
-#####Why do we use TestNg or Junit?
+##### Why do we use TestNg or Junit?
 Testing Frameworks gives us many types of verification types, makes it easier to see each test case if it passed or not, generates report for all executed test cases.
 <br/>
 Benefits:
