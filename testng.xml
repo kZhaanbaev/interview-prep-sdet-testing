@@ -6,11 +6,17 @@
         <groups>
             <run>
                 <include name="smokeTest" />
+                <exclude name="notSmokeTest"/>
             </run>
         </groups>
        <classes>
            <class name="tests.LoginTest"/>
-           <class name="tests.HomeTest"/>
+           <class name="tests.HomeTest">
+               <methods>
+                   <exclude name="test"/>
+                   <include name="test2"/>
+               </methods>
+           </class>
        </classes>
     </test>
 </suite>
